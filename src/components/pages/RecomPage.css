@@ -1,0 +1,173 @@
+/* src/components/pages/RecomPage.css */
+
+.recom-container {
+  padding: 30px;
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0); /* Soft pink gradient */
+  color: #4a148c; /* Deep purple text */
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recom-section {
+  margin-bottom: 50px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+  color: #e91e63; /* Vibrant pink title */
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.filter-controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.filter-controls label {
+  font-weight: bold;
+  color: #7b1fa2; /* Medium purple label */
+}
+
+.filter-controls select {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  flex-grow: 1;
+  max-width: 200px;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.item-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-cover {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.item-title {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #3f51b5; /* Indigo title */
+}
+
+.item-subtitle {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.favorite-button, .like-button {
+  background: none;
+  border: 2px solid #e91e63; /* Pink border */
+  color: #e91e63;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.favorite-button:hover, .like-button:hover {
+  background-color: #e91e63;
+  color: white;
+}
+
+.restaurant-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+  align-items: center;
+}
+
+.restaurant-image {
+  width: 100%;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.restaurant-details {
+  text-align: left;
+}
+
+.rating {
+  font-size: 0.9rem;
+  color: #ffc107; /* Amber rating color */
+  margin-top: 5px;
+}
+
+.emoji-reactions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+.emoji-reactions span {
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.emoji-reactions span:hover {
+  transform: scale(1.2);
+}
+
+.active-emoji {
+  filter: brightness(1.3);
+  transform: scale(1.4);
+}
+
+.user-reaction {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  color: #4caf50; /* Green reaction color */
+}

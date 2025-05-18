@@ -1,0 +1,59 @@
+/* Wishlist.css */
+
+.wishlist-container {
+  max-width: 600px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.wishlist-container h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #d6336c;
+}
+
+.wishlist {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+  border: 2px solid #d6336c;
+  border-radius: 12px;
+  background-color: #fff0f6;
+  box-shadow: 0 6px 15px rgba(214, 51, 108, 0.25);
+}
+
+.wishlist li {
+  padding: 14px 18px;
+  border-bottom: 1px solid #d6336c;
+  font-size: 1.15rem;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.wishlist li:last-child {
+  border-bottom: none;
+}
+
+.wishlist li:hover {
+  background-color: #ffd6e7;
+}
+
+.drag-handle {
+  margin-right: 12px;
+  font-size: 1.3rem;
+  cursor: grab;
+  color: #a52c57;
+}
+
+.dragging {
+  opacity: 0.6;
+  background-color: #ffb3cc !important;
+  cursor: grabbing;
+}

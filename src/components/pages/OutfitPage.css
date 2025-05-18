@@ -1,0 +1,194 @@
+/* OutfitPage.css */
+
+.outfit-container {
+  padding: 30px;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #ffe0b2, #ffcc80); /* Warm orange gradient */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vibrant-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #e65100; /* Deep orange title */
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.outfit-builder {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  max-width: 1000px;
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.category {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.category h3 {
+  text-align: center;
+  color: #795548; /* Brown category title */
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.items-scrollable {
+  max-height: 150px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.draggable {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  cursor: grab;
+  text-align: center;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-bottom: 8px;
+}
+
+.draggable:hover {
+  background-color: #eee;
+  transform: scale(1.03);
+}
+
+.dropzone {
+  background-color: #fff8e1; /* Light yellow dropzone */
+  border: 2px dashed #ffb300; /* Amber dashed border */
+  padding: 30px;
+  border-radius: 12px;
+  min-height: 200px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropzone h3 {
+  margin-top: 0;
+  color: #ff8f00; /* Deep amber dropzone title */
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.current-outfit {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px 0;
+  color: #555;
+}
+
+.outfit-item {
+  padding: 8px 15px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  background-color: #fff59d; /* Light amber item background */
+}
+
+.category-label {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #795548;
+}
+
+.item-name {
+  font-style: italic;
+}
+
+.score {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #4caf50; /* Green score color */
+}
+
+.dropzone-highlight {
+  background-color: #fffde7; /* Even lighter yellow on highlight */
+  border-color: #fdd835; /* Brighter amber on highlight */
+}
+
+.highlighted {
+  background-color: #fdd835 !important;
+  color: #333 !important;
+}
+
+.top-combos-section {
+  margin-top: 40px;
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+}
+
+.show-combos-button {
+  padding: 12px 25px;
+  border: none;
+  background-color: #ff9800; /* Orange button */
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.show-combos-button:hover {
+  background-color: #f57c00;
+  transform: translateY(-2px);
+}
+
+.combo-table {
+  background: rgba(255, 255, 255, 0.8); /* Glassmorphism background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.combo-table h3 {
+  color: #e65100;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.combo-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.combo-table th,
+.combo-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.combo-table th {
+  background-color: #fbe9e7; /* Light orange table header */
+  color: #795548;
+}
+
+.score-value {
+  font-weight: bold;
+  color: #4caf50;
+}

@@ -1,0 +1,67 @@
+/* src/components/RegisterPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.register-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+}
+
+.register-card {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.register-card h2 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.register-card input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.register-card input:focus {
+  border-color: #2ebf91;
+  outline: none;
+}
+
+.register-card button {
+  padding: 0.75rem;
+  background-color: #2ebf91;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.register-card button:hover {
+  background-color: #249c7e;
+  transform: translateY(-2px);
+}

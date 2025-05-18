@@ -1,0 +1,103 @@
+/* ComparisonPage.css */
+
+.comparison-container {
+  max-width: 900px;
+  margin: 50px auto 80px;
+  padding: 0 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.comparison-container h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 40px;
+  color:white;
+  font-weight: 700;
+}
+
+.overlap-map {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.overlap-map section {
+  flex: 1;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 119, 182, 0.2);
+  background-color: #f0f7fb;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlap-map section h3 {
+  margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #023e8a;
+  border-bottom: 2px solid #0077b6;
+  padding-bottom: 6px;
+}
+
+.overlap-map ul {
+  list-style: none;
+  padding-left: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.overlap-map li {
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  background-color: #caf0f8;
+  color: #03045e;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.overlap-map li:hover {
+  background-color: #90e0ef;
+  cursor: default;
+}
+
+.your-recs li {
+  background-color: #ade8f4;
+}
+
+.friend-recs li {
+  background-color: #ffc8dd;
+  color: #6a1b4d;
+}
+
+.overlap-recs li {
+  background-color: #b5f0c9;
+  color: #1b4d1b;
+  font-weight: 600;
+}
+
+.empty {
+  font-style: italic;
+  color: #888;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 1.1rem;
+}
+
+/* Scrollbar for overflow lists */
+.overlap-map ul::-webkit-scrollbar {
+  width: 8px;
+}
+.overlap-map ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+.overlap-map ul::-webkit-scrollbar-thumb {
+  background-color: #0077b6;
+  border-radius: 8px;
+}

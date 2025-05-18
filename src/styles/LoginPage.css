@@ -1,0 +1,133 @@
+/* src/components/LoginPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  position: relative; /* To position the back button absolutely */
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 20; /* Ensure it's above the login card */
+  transition: opacity 0.3s ease;
+}
+
+.back-button svg {
+  font-size: 1.2rem; /* Adjust icon size */
+}
+
+.back-button:hover {
+  opacity: 0.8;
+}
+
+.login-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.login-card form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s;
+}
+
+.login-card form input:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+.login-card form button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #2575fc;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-card form button:hover {
+  background-color: #1b5ed2;
+}
+
+.social-section {
+  margin-top: 1.5rem;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.google-btn,
+.facebook-btn {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  color: white;
+  opacity: 0.8;
+}
+
+.google-btn {
+  background-color: #db4437;
+}
+
+.facebook-btn {
+  background-color: #3b5998;
+}
+
+.register-link {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.register-link a {
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,152 @@
+/* GenPage.css */
+
+.gen-container {
+  padding: 30px;
+  background: linear-gradient(135deg, #c33764, #1d2671); /* Deep and vibrant gradient */
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.gen-section {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.section-title {
+  color: #fdd835; /* Bright yellow accent */
+  margin-bottom: 25px;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #eee;
+  font-size: 1.1rem;
+}
+
+select {
+  padding: 12px 18px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+select option {
+  background-color: #333;
+  color: #fff;
+}
+
+.generate-button {
+  padding: 12px 25px;
+  border: none;
+  background-color: #fdd835;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.generate-button:hover {
+  background-color: #ffeb3b;
+}
+
+.result {
+  margin-top: 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #8bc34a; /* Light green result color */
+}
+
+.highlight {
+  color: #fdd835;
+  font-style: italic;
+}
+
+.travel-ideas .idea-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.travel-ideas .idea-item {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.travel-ideas .idea-image-container {
+  width: 100%;
+  max-height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.travel-ideas .idea-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.travel-ideas .idea-details {
+  text-align: center;
+}
+
+.travel-ideas .idea-title {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  color: #fdd835;
+}
+
+.travel-ideas .idea-subtitle {
+  font-size: 1rem;
+  color: #eee;
+  margin-bottom: 8px;
+}
+
+.travel-ideas .rating {
+  color: #fdd835;
+  font-size: 1.1rem;
+}
+
+.travel-ideas .stars {
+  font-size: 1.2rem;
+}
+
+.travel-ideas .no-results {
+  color: #f44336;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.gift-generator .result {
+  color: #ffca28; /* Another shade of yellow */
+}

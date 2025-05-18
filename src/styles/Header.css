@@ -1,0 +1,108 @@
+/* src/components/Header.css */
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a; /* Darker background */
+  color: #eee; /* Lighter text */
+  padding: 18px 40px; /* Slightly more padding */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #333; /* Subtle bottom border */
+}
+
+.logo {
+  width: auto; /* Adjust width to content */
+  height: auto; /* Adjust height to content */
+}
+
+.logo img {
+  max-height: 40px; /* Control logo image height */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #ddd; /* Slightly lighter text */
+  text-decoration: none;
+  margin: 0 18px; /* More spacing */
+  font-weight: 500;
+  font-size: 1rem; /* Slightly larger font */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smoother transition with transform */
+}
+
+.nav-links a:hover {
+  color: #00bfa5; /* Teal hover color */
+  transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-icon {
+  border-radius: 50%;
+  cursor: pointer;
+  width: 45px; /* Slightly larger */
+  height: 45px; /* Slightly larger */
+  border: 2px solid #ddd; /* Lighter border */
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.profile-icon:hover {
+  border-color: #00bfa5;
+  transform: scale(1.05); /* Subtle scale on hover */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 50px; /* Adjust position */
+  background-color: #222; /* Dark dropdown */
+  color: #ddd; /* Light text in dropdown */
+  min-width: 180px; /* Wider dropdown */
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3); /* More pronounced dropdown shadow */
+  z-index: 10;
+  overflow: hidden;
+  border: 1px solid #333; /* Subtle dropdown border */
+}
+
+.dropdown-content a,
+.dropdown-content button {
+  padding: 14px 20px; /* More padding in dropdown */
+  text-decoration: none;
+  display: block;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #ddd; /* Light text in dropdown */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.dropdown-content a:hover,
+.dropdown-content button:hover {
+  background-color: #333; /* Darker hover in dropdown */
+  color: #00bfa5; /* Teal hover text */
+}
+
+.dropdown-content hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 8px 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -1,0 +1,97 @@
+/* src/components/Footer.css */
+
+.app-footer {
+  background-color: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 30px 20px; /* Increased padding */
+  font-size: 0.9rem;
+  margin-top: auto;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column; /* Stack contact info and copyright on smaller screens */
+  align-items: center;
+  gap: 20px; /* Space between contact and copyright */
+}
+
+.footer-contact {
+  margin-bottom: 15px; /* Space below contact section */
+}
+
+.footer-contact h3 {
+  color: #eee;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center icon and text */
+}
+
+.footer-icon {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #007bff; /* Example icon color */
+}
+
+.footer-copyright {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+@media (min-width: 768px) {
+  .app-footer {
+    flex-direction: row; /* Arrange contact and copyright in a row on larger screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 0; /* Remove gap in row layout */
+  }
+
+  .footer-contact {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .footer-contact p {
+    justify-content: flex-start; /* Align icon and text to the left */
+  }
+
+  .footer-copyright {
+    text-align: right;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-footer {
+    font-size: 0.8rem;
+    padding: 15px 20px;
+  }
+
+  .footer-contact h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .footer-contact p {
+    font-size: 0.8rem;
+  }
+
+  .footer-icon {
+    font-size: 0.9rem;
+    margin-right: 8px;
+  }
+
+  .footer-copyright {
+    font-size: 0.75rem;
+    margin-top: 10px;
+  }
+}
