@@ -16,7 +16,7 @@ import ProfilePage from './components/pages/ProfilePage';
 import ComparisonPage from './components/pages/ComparisonPage';
 import WishlistPage from './components/pages/WishlistPage';
 
-import { ProfilePicProvider } from 'E:\\book_recom\\src\\context\\ProfilePicContext.js';
+import { ProfilePicProvider } from './context/ProfilePicContext.js';
 import './App.css';
 
 // Background color controller component inside App.js
